@@ -108,8 +108,8 @@ question(beep_code_2, 'Does the Dell desktop produce diagnostic beep code 2?').
 question(beep_code_4, 'Does the Dell desktop produce diagnostic beep code 4?').
 question(beep_code_6, 'Does the Dell desktop produce diagnostic beep code 6?').
 question(beep_code_7, 'Does the Dell desktop produce diagnostic beep code 7?').
-question(dell_optiplex_applicable,'Is this an applicable Dell OptiPlex system using the documented legacy beep pattern?').
-question(beep_pattern_1_3_2,'Does the system produce the 1-3-2 diagnostic beep pattern?').
+question(dell_optiplex_applicable, 'Is this an applicable Dell OptiPlex system using documented diagnostic beep codes?').
+question(memory_related_beep_pattern, 'Does the system produce a Dell-documented memory-related diagnostic beep pattern?').
 question(shuts_down_shortly, 'Does the computer automatically shut down after operating for a short time?').
 question(cpu_frequency_low, 'Is the CPU operating below its expected frequency?').
 question(cpu_throttling,'Is processor thermal throttling being reported?').
@@ -273,7 +273,7 @@ rule(
 rule(
   'R14',
   display_post,
-  [dell_optiplex_applicable, beep_pattern_1_3_2],
+  [dell_optiplex_applicable, memory_related_beep_pattern],
   memory_problem,
   'The documented Dell diagnostic beep pattern indicates a memory problem.',
   'S2 - Dell Desktop Diagnostic Beep Code documentation'

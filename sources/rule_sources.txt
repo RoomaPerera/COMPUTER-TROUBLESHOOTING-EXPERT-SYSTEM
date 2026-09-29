@@ -45,7 +45,7 @@ Used for:
 - RAM failure
 - Video card/chip failure
 - CPU failure
-- Memory diagnostic codes
+- Memory-related diagnostic codes
 
 Rules supported:
 R10, R11, R12, R13, R14
