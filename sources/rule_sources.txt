@@ -1,0 +1,185 @@
+COMPUTER TROUBLESHOOTING EXPERT SYSTEM
+
+Project:
+Computer Troubleshooting Expert System Using Prolog
+
+Purpose:
+This file records the external sources used to obtain the domain knowledge and troubleshooting rules used in the expert system. The rules implemented in Prolog are derived from these sources and are not independently invented.
+
+============================================================
+SOURCE S1
+============================================================
+
+Organization: Dell Technologies
+
+Title:
+How to Resolve No Power, No POST, No Boot or No Video Issues with Your Dell Computer
+
+Used for:
+- No Power diagnosis
+- Power cable and power source troubleshooting
+- No POST diagnosis
+- No Boot diagnosis
+- No Video diagnosis
+- Display troubleshooting
+- Startup diagnostic symptoms
+
+Rules supported:
+R01, R02, R03, R04, R05, R06, R07, R08, R09
+
+URL:
+https://www.dell.com/support/kbdoc/en-ap/000125609/resolve-no-power-no-post-no-boot-or-no-video-issues-with-your-dell-computer?utm_source=chatgpt.com
+
+============================================================
+SOURCE S2
+============================================================
+
+Organization: Dell Technologies
+
+Title:
+Understanding Beep Codes on a Dell Desktop PC
+
+Used for:
+- Dell diagnostic beep codes
+- RAM detection problems
+- RAM failure
+- Video card/chip failure
+- CPU failure
+- Memory diagnostic codes
+
+Rules supported:
+R10, R11, R12, R13, R14
+
+Important:
+These diagnostic codes are Dell-specific and should only be applied when the relevant Dell computer/product family is being diagnosed.
+
+URL:
+https://www.dell.com/support/kbdoc/en-ge/000124349/understanding-beep-codes-on-a-dell-desktop-pc?lang=en&utm_source=chatgpt.com
+
+============================================================
+SOURCE S3
+============================================================
+
+Organization: Intel
+
+Title:
+Overheating Symptoms and Troubleshooting for Intel Processors
+
+Used for:
+- CPU overheating symptoms
+- Automatic shutdown caused by thermal problems
+- Processor throttling
+- Slow system performance related to overheating
+- Excessive fan activity
+- Cooling fan troubleshooting
+
+Rules supported:
+R15, R16, R17, R18
+
+URL:
+https://www.intel.com/content/www/us/en/support/articles/000005791/processors/intel-core-processors.html?utm_source=chatgpt.com
+
+============================================================
+SOURCE S4
+============================================================
+
+Organization: Intel
+
+Title:
+Computer Randomly Reboots or Shuts Down
+
+Used for:
+- Random reboot troubleshooting
+- Power supply investigation
+- DRAM / memory testing
+
+Rules supported:
+R19, R20
+
+URL:
+https://www.intel.com/content/www/us/en/support/articles/000035903/processors.html?utm_source=chatgpt.com
+
+
+============================================================
+SOURCE S5
+============================================================
+
+Organization: Seagate
+
+Title:
+My System Reported a S.M.A.R.T. Error on the Drive
+
+Used for:
+- SMART drive warnings
+- Possible storage drive failure
+- Drive temperature problems
+- Backup recommendations
+
+Rules supported:
+R21, R22
+
+URL:
+https://www.seagate.com/in/en/support/kb/my-system-reported-a-smart-error-on-the-drive-184619en/?utm_source=chatgpt.com
+
+============================================================
+SOURCE S6
+============================================================
+
+Organization: Seagate
+
+Title:
+My Solid State Drive May Be Defective - How Can I Test It?
+
+Used for:
+- Storage drive diagnostic testing
+- SeaTools test failures
+- Drive replacement recommendation
+
+Rules supported:
+R23
+
+URL:
+https://www.seagate.com/in/en/support/kb/my-solid-state-drive-may-be-defective-how-can-i-test-it-005706en/?utm_source=chatgpt.com
+
+============================================================
+SOURCE S7
+============================================================
+
+Organization: Microsoft
+
+Title:
+Fix Wi-Fi Connection Issues in Windows
+
+Used for:
+- Determining whether a Wi-Fi problem is specific to one PC
+- DHCP/IP address problems
+- 169.254.x.x IP address diagnosis
+- Network troubleshooting
+
+Rules supported:
+R24, R25
+
+URL:
+https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows?utm_source=chatgpt.com
+
+============================================================
+RULE-SOURCE SUMMARY
+============================================================
+
+R01-R09   -> S1 - Dell No Power/POST/Boot/Video documentation
+R10-R14   -> S2 - Dell diagnostic beep-code documentation
+R15-R18   -> S3 - Intel overheating documentation
+R19-R20   -> S4 - Intel random reboot/shutdown documentation
+R21-R22   -> S5 - Seagate SMART documentation
+R23       -> S6 - Seagate drive diagnostic documentation
+R24-R25   -> S7 - Microsoft Wi-Fi troubleshooting documentation
+
+============================================================
+NOTES
+============================================================
+
+1. The expert system uses knowledge obtained from official manufacturer/support documentation.
+2. No domain expert was interviewed for this project.
+3. The Prolog rules are knowledge representations derived from the cited troubleshooting documentation.
+4. Vendor-specific diagnostic information must only be applied to the appropriate hardware.
+5. These sources will also be included in the final assignment report and rule annex.
